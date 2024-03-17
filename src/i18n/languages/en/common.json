@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "title": "Luxary chain",
+    "description": "This is an Luxary chain run by SJ."
+  },
+  "errors": {
+    "unexpected": "An unexpected error has occurred.",
+    "notSignedIn": "You need to sign in."
+  },
+  "linkText": {
+    "aboutUs": "ABOUT US",
+    "termsOfUse": "Terms of Use",
+    "privacyPolycy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "service": "SERVICE",
+    "copyLight": "© 2024 SJ.",
+    "laxury": "Luxary",
+    "howToJoin": "How to Join"
+  },
+  "list": {
+    "title": "Luxary",
+    "happeningNow": "Happening Now",
+    "upcoming": "Upcoming",
+    "previous": "Previous",
+    "viewDetails": "View Details"
+  },
+  "breadcrumb": {
+    "TOP": "TOP"
+  }
+}
