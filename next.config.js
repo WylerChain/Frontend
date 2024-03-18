@@ -8,17 +8,6 @@ const withVanillaExtract = createVanillaExtractPlugin();
 module.exports = (phase) => {
   const nextConfig = {
     i18n,
-    // images: {
-    //   remotePatterns: [
-    //     {
-    //       protocol: "https",
-    //       hostname: "storage.googleapis.com",
-    //       port: "",
-    //       pathname: "*",
-    //     },
-    //   ],
-    //   domains: ["127.0.0.1", "storage.googleapis.com", "flagcdn.com"],
-    // },
   };
 
   return withVanillaExtract(nextConfig);
