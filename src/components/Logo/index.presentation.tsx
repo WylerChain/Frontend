@@ -8,7 +8,7 @@ export type LogoProps = {
 export const Logo: React.FC<LogoProps> = ({ color, ...rest }) => {
   return (
     <Image
-      src={color === "white" ? "/next.svg" : "/next.svg"}
+      src={color === "white" ? "/Logo/white.png" : "/Logo/black.png"}
       alt="Logo"
       loading="lazy"
       height="23"

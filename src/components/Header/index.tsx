@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Link from "next/link";
 import React, { FC, ReactNode } from "react";
-import { Logo } from "@/components/Logo/index";
+import { Logo } from "@/components/Logo/index.presentation";
 import { COLORS } from "@/utils/colors";
 import { getTranslation } from "@/i18n";
 import { LANGUAGE_OPTIONS, NAMESPACE_OPTIONS } from "@/i18n/settings";
@@ -40,11 +40,11 @@ export const Header: React.FC<HeaderProps> = async ({}) => {
             <Box sx={{ display: "flex", gap: "16px" }}>
               <Box
                 component={Link}
-                href="/luxary"
+                href="/auctions"
                 sx={{ textDecoration: "none" }}
                 color={"primary.dark"}
               >
-                <Typography fontSize="12px">{t("linkText.laxury")}</Typography>
+                <Typography fontSize="12px">{t("linkText.auction")}</Typography>
               </Box>
               <Box
                 component={Link}
@@ -75,7 +75,7 @@ export const Header: React.FC<HeaderProps> = async ({}) => {
                 </Button>
               </Box>
             </Box>
-            {/* TODO:Contains the Language selector. Currently, an empty box is placed. */}
+            {/* TODO: Contains the Language selector. Currently, an empty box is placed. */}
             <Box sx={{ height: "18px" }} />
           </Box>
         </Grid>
