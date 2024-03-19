@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = async ({}) => {
                 sx={{ textDecoration: "none" }}
                 color={"primary.dark"}
               >
-                <Typography fontSize="12px">{t("linkText.auction")}</Typography>
+                <Typography fontSize="12px">{t("linkText.laxury")}</Typography>
               </Box>
               <Box
                 component={Link}
