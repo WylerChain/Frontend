@@ -1,14 +1,18 @@
-// const { PHASE_PRODUCTION_BUILD } = require("next/constants");
-
-const { i18n } = require("./next-i18next.config");
-
-const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
-const withVanillaExtract = createVanillaExtractPlugin();
-
-module.exports = (phase) => {
-  const nextConfig = {
-    i18n,
-  };
-
-  return withVanillaExtract(nextConfig);
+/** @type {import('next').NextConfig} */
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'user-images.githubusercontent.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github-production-user-asset-6210df.s3.amazonaws.com',
+        pathname: '/**',
+      },
+    ],
+  },
 };
