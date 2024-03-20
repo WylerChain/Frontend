@@ -1,0 +1,42 @@
+{
+  "metadata": { "title": "Artx Auction", "description": "This is an Auction app run by Artx." },
+  "errors": {
+    "unexpected": "An unexpected error has occurred.",
+    "notSignedIn": "You need to sign in."
+  },
+  "linkText": {
+    "aboutUs": "ABOUT US",
+    "termsOfUse": "Terms of Use",
+    "privacyPolycy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "service": "SERVICE",
+    "artx": "Artx",
+    "artxCloud": "ArtxCloud",
+    "copyLight": "© 2024 ArtX.",
+    "auction": "Auction",
+    "howToJoin": "How to Join"
+  },
+  "list": {
+    "title": "Auctions",
+    "happeningNow": "Happening Now",
+    "upcoming": "Upcoming",
+    "previous": "Previous",
+    "viewDetails": "View Details",
+    "startEnd": "{{start}} - {{end}}, Ends {{time}}"
+  },
+  "bid": {
+    "now": "Now bidding {{name}}",
+    "none": "--",
+    "title": "Bids",
+    "label": {
+      "amount": "Amount",
+      "bider": "Bider",
+      "created_at": "Bid At"
+    },
+    "yourBid": "Your Bid",
+    "minsAgo": "{{value}} mins ago"
+  },
+  "breadcrumb": {
+    "TOP": "TOP"
+  }
+}

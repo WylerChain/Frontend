@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "applicationSucceeded": "Application succeeded",
+    "bidSucceeded": "Bid succeeded"
+  },
+  "errors": {
+    "alreadyApplied": "You have already applied for this auction.",
+    "accountBeforeReview": "You must complete your account registration before applying for this auction.",
+    "accountUnderReview": "Your account is under review. Please wait for approval.",
+    "accountRejected": "Your account has been rejected."
+  },
+  "buttonText": {
+    "registerToJoin": "Register to Join",
+    "waitingForStart": "Waiting for Start",
+    "joinAuction": "Join Auction",
+    "viewAuction": "View Auction",
+    "bidNow": "Place Bid",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "confirm": "Confirm",
+    "leave": "Leave"
+  },
+  "profile": "Your Profile: {{name}}",
+  "controlText": {
+    "noConfirmationDisplay": "Don't display the confirmation.",
+    "viewAuction": "View Auction"
+  },
+  "labels": {
+    "applicationDeadline": "Application Deadline",
+    "venue": "VENUE"
+  },
+  "descriptions": {
+    "applyToJoinFirst": "Click “Apply Online\" after confirming and agreeing to the ",
+    "conditionsOfSale": "Conditions of Sale",
+    "applyToJoinSecond": "to apply to join the auction."
+  }
+}
