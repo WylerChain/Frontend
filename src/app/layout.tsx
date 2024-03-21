@@ -11,6 +11,7 @@ import { Footer } from "@/components/Footer/index.presentation";
 import { ThemeProvider } from "@/contexts/themeContext";
 import { formaleGrotesque } from "@/fonts";
 import { MeContextProvider } from "@/contexts/meContext";
+import SessionWrapper from '@/features/auth/hooks/SessionWrapper';
 
 // metadataを多言語対応
 export async function generateMetadata({
@@ -31,21 +32,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/*<body className={`${formaleGrotesque.className}`}>*/}
-      <body>
-        <ThemeProvider>
-          <SnackbarProvider>
-            {/* <MeContextProvider>
-              <AuthProvider> */}
-            <Header />
-            {children}
-            <Footer />
-            {/* </AuthProvider>
-            </MeContextProvider> */}
-          </SnackbarProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+    <SessionWrapper>
+      <html lang="en">
+        {/*<body className={`${formaleGrotesque.className}`}>*/}
+        <body>
+          <ThemeProvider>
+            <SnackbarProvider>
+              {/* <MeContextProvider>
+                <AuthProvider> */}
+                <Header />
+                {children}
+                <Footer />
+              {/* </AuthProvider>
+              </MeContextProvider> */}
+            </SnackbarProvider>
+          </ThemeProvider>
+        </body>
+      </html>
+    </SessionWrapper>
   );
 }
