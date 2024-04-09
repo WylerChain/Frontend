@@ -4,13 +4,15 @@ import {
   KEY_PREFIX_OPTIONS,
 } from "@/i18n/settings";
 import { getTranslation } from "@/i18n";
-import { AuthProvider } from "@/contexts/authContext";
+// import { AuthProvider } from "@/contexts/authContext";
 import { SnackbarProvider } from "@/contexts/snackbarContext";
 import { Header } from "@/components/Header/index.presentation";
 import { Footer } from "@/components/Footer/index.presentation";
 import { ThemeProvider } from "@/contexts/themeContext";
-import { formaleGrotesque } from "@/fonts";
-import { MeContextProvider } from "@/contexts/meContext";
+import "./globals.css";
+import { Gradient } from "@mui/icons-material";
+// import { formaleGrotesque } from "@/fonts";
+// import { MeContextProvider } from "@/contexts/meContext";
 
 // metadataを多言語対応
 export async function generateMetadata({
@@ -40,7 +42,7 @@ export default function RootLayout({
               <AuthProvider> */}
             <Header />
             {children}
-            <Footer />
+            {/* <Footer /> */}
             {/* </AuthProvider>
             </MeContextProvider> */}
           </SnackbarProvider>
