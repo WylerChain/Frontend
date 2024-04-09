@@ -1,5 +1,8 @@
 {
-  "metadata": { "title": "Artx Auction", "description": "This is an Auction app run by Artx." },
+  "metadata": {
+    "title": "Fiction Chain",
+    "description": "This is an blockchain based on substrate"
+  },
   "errors": {
     "unexpected": "An unexpected error has occurred.",
     "notSignedIn": "You need to sign in."
