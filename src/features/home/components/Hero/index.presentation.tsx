@@ -48,23 +48,23 @@ const Hero = (): JSX.Element => {
           <Grid container spacing={2}>
             <Grid item xs={7}>
               <FeatureItem
-                imgPath={`/heroitems/item1.png`}
+                imgPath={`/item1.png`}
                 desc={"Optimized specifically for financial apps"}
               />
               <FeatureItem
-                imgPath={`/heroitems/item2.png`}
+                imgPath={`/item2.png`}
                 desc={"Continuous and seamless upgrades"}
               />
               <FeatureItem
-                imgPath={`/heroitems/item3.png`}
+                imgPath={`/item3.png`}
                 desc={"High Grade & Customizable Solutions"}
               />
               <FeatureItem
-                imgPath={`/heroitems/item4.png`}
+                imgPath={`/item4.png`}
                 desc={"Customizable code and skills"}
               />
               <FeatureItem
-                imgPath={`/heroitems/item5.png`}
+                imgPath={`/item5.png`}
                 desc={"A new platform for all"}
               />
             </Grid>
