@@ -47,13 +47,26 @@ const Hero = (): JSX.Element => {
 
           <Grid container spacing={2}>
             <Grid item xs={7}>
-              {featureItemImgs.map(({ image, desc }, index) => (
-                <FeatureItem
-                  key={index}
-                  imgPath={`/heroitems/${image}`}
-                  desc={desc}
-                />
-              ))}
+              <FeatureItem
+                imgPath={`/heroitems/item1.png`}
+                desc={"Optimized specifically for financial apps"}
+              />
+              <FeatureItem
+                imgPath={`/heroitems/item2.png`}
+                desc={"Continuous and seamless upgrades"}
+              />
+              <FeatureItem
+                imgPath={`/heroitems/item3.png`}
+                desc={"High Grade & Customizable Solutions"}
+              />
+              <FeatureItem
+                imgPath={`/heroitems/item4.png`}
+                desc={"Customizable code and skills"}
+              />
+              <FeatureItem
+                imgPath={`/heroitems/item5.png`}
+                desc={"A new platform for all"}
+              />
             </Grid>
             <Grid item xs={5} sx={{ my: 2 }}>
               {stateItems.map(({ num, desc }, index) => (
