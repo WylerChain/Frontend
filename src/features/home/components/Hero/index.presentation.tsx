@@ -17,11 +17,11 @@ interface StateItemData {
 
 const Hero = (): JSX.Element => {
   const featureItemImgs: FeatureItemData[] = [
-    { image: "item1.svg", desc: "Optimized specifically for financial apps" },
-    { image: "item2.svg", desc: "Continuous and seamless upgrades" },
-    { image: "item3.svg", desc: "High Grade & Customizable Solutions" },
-    { image: "item4.svg", desc: "Customizable code and skills" },
-    { image: "item5.svg", desc: "A new platform for all" },
+    { image: "item1.png", desc: "Optimized specifically for financial apps" },
+    { image: "item2.png", desc: "Continuous and seamless upgrades" },
+    { image: "item3.png", desc: "High Grade & Customizable Solutions" },
+    { image: "item4.png", desc: "Customizable code and skills" },
+    { image: "item5.png", desc: "A new platform for all" },
   ];
 
   const stateItems: StateItemData[] = [
