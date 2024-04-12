@@ -43,8 +43,10 @@ export const Workout: React.FC<WorkoutProps> = ({}) => {
           }}
         >
           <Typography>
-            <b style={{ color: COLORS.dark }}>Endless Possibilities:</b> Wyler
-            Chain's versatility
+            {/* <span style={{ color: COLORS.dark, fontWeight: 600 }}>
+              Endless Possibilities:
+            </span>
+            <span> Wyler Chain's versatility</span> */}
           </Typography>
           <Typography>opens doors to a vast array of dApp </Typography>
           <Typography>applications. Imagine a future powered by:</Typography>

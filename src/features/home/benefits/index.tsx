@@ -27,9 +27,7 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
             }
             return (
               <>
-                <Grid item key={i}>
-                  <BenefitCard title={item.title} desc={item.desc} />
-                </Grid>
+                <BenefitCard title={item.title} desc={item.desc} key={i} />
               </>
             );
           })}
@@ -46,9 +44,7 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
             }
             return (
               <>
-                <Grid item key={i}>
-                  <BenefitCard title={item.title} desc={item.desc} />
-                </Grid>
+                <BenefitCard title={item.title} desc={item.desc} key={i} />
               </>
             );
           })}
