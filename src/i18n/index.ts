@@ -1,4 +1,4 @@
-// サーバーコンポーネント用設定ファイル
+// Configuration file for server components
 import { createInstance } from "i18next";
 import { Namespace } from "i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
@@ -11,7 +11,7 @@ const initI18next = async (lng: Language, ns: Namespace) => {
     .use(initReactI18next)
     .use(
       resourcesToBackend(
-        // NOTE: 型定義が提供されてない ^ any定義による影響の小ささから、一旦型定義は後回しにする
+        // NOTE: Type definition is not provided ^ Due to the small impact of any definition, type definition will be postponed for now.
         (language: any, namespace: any) =>
           import(`./languages/${language}/${namespace}.json`)
       )
@@ -21,7 +21,7 @@ const initI18next = async (lng: Language, ns: Namespace) => {
 };
 
 /**
- * @description server component用の翻訳データ取得関数
+ * @description Translation data acquisition function for server component
  */
 export const getTranslation = async (
   lng: Language,

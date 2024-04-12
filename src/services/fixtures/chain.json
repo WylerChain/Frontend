@@ -1,0 +1,23 @@
+{
+  "id": "50f81450-9695-4d4d-8516-6607efee83af",
+  "title": "Chain ",
+  "description": "Chain  description.",
+  "start_at": "2024-01-18T03:49:57.000Z",
+  "end_at": "2024-01-18T04:49:57.000Z",
+  "suspended": true,
+  "address": {
+    "id": "",
+    "postal_code": "1234567",
+    "country": "India",
+    "state": "New Deli",
+    "city": "New Deli",
+    "street": "",
+    "others": ""
+  },
+  "chain_cover_images": [
+    {
+      "id": "",
+      "image_url": ""
+    }
+  ]
+}

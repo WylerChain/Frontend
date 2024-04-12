@@ -1,52 +1,53 @@
-import {
-  LANGUAGE_OPTIONS,
-  DEFAULT_NS,
-  KEY_PREFIX_OPTIONS,
-} from "@/i18n/settings";
-import { getTranslation } from "@/i18n";
-// import { AuthProvider } from "@/contexts/authContext";
-import { SnackbarProvider } from "@/contexts/snackbarContext";
-import { Header } from "@/components/Header/index.presentation";
-import { Footer } from "@/components/Footer/index.presentation";
-import { ThemeProvider } from "@/contexts/themeContext";
-import "./globals.css";
-import { Gradient } from "@mui/icons-material";
-// import { formaleGrotesque } from "@/fonts";
-// import { MeContextProvider } from "@/contexts/meContext";
-
-// metadataを多言語対応
-export async function generateMetadata({
-  params: { lng = LANGUAGE_OPTIONS.ENGLISH },
-}) {
-  const { t } = await getTranslation(lng, DEFAULT_NS, {
-    keyPrefix: KEY_PREFIX_OPTIONS.metadata,
-  });
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
-}
+import React, { ReactNode } from "react";
+import { Box } from "@mui/material";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import "@/assets/scss/style.scss";
+import { Copyright } from "@/components/footer/Copyright";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // const [loading, setLoading] = useState<boolean>(false);
+
+  // useEffect(() => {
+  //   dispatch(getMenu()).then(() => {
+  //     setLoading(true);
+  //   });
+  // }, []);
+
+  // if (!loading) return <Loader />;
   return (
     <html lang="en">
-      {/*<body className={`${formaleGrotesque.className}`}>*/}
       <body>
-        <ThemeProvider>
-          <SnackbarProvider>
-            {/* <MeContextProvider>
-              <AuthProvider> */}
-            <Header />
-            {children}
-            {/* <Footer /> */}
-            {/* </AuthProvider>
-            </MeContextProvider> */}
-          </SnackbarProvider>
-        </ThemeProvider>
+        <Header />
+        {children}
+        <Box
+          sx={{
+            borderTop: "1px solid #E6E8EC",
+          }}
+          mt={"150px"}
+        >
+          <Box
+            sx={{
+              width: "1124px",
+              margin: "auto",
+            }}
+          >
+            <Footer />
+          </Box>
+          <Box sx={{ borderTop: "1px solid #E6E8EC" }}>
+            <Box
+              sx={{ width: "1124px", margin: "auto" }}
+              pt={"20px"}
+              pb={"20px"}
+            >
+              <Copyright />
+            </Box>
+          </Box>
+        </Box>
       </body>
     </html>
   );
