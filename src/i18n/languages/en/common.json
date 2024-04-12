@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Fiction Chain",
-    "description": "This is an blockchain based on substrate"
+    "title": "Luxary chain",
+    "description": "This is an Luxary chain run by SJ."
   },
   "errors": {
     "unexpected": "An unexpected error has occurred.",
@@ -13,31 +13,16 @@
     "privacyPolycy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy",
     "service": "SERVICE",
-    "artx": "Artx",
-    "artxCloud": "ArtxCloud",
-    "copyLight": "© 2024 ArtX.",
-    "auction": "Auction",
+    "copyLight": "© 2024 SJ.",
+    "laxury": "Luxary",
     "howToJoin": "How to Join"
   },
   "list": {
-    "title": "Auctions",
+    "title": "Luxary",
     "happeningNow": "Happening Now",
     "upcoming": "Upcoming",
     "previous": "Previous",
-    "viewDetails": "View Details",
-    "startEnd": "{{start}} - {{end}}, Ends {{time}}"
-  },
-  "bid": {
-    "now": "Now bidding {{name}}",
-    "none": "--",
-    "title": "Bids",
-    "label": {
-      "amount": "Amount",
-      "bider": "Bider",
-      "created_at": "Bid At"
-    },
-    "yourBid": "Your Bid",
-    "minsAgo": "{{value}} mins ago"
+    "viewDetails": "View Details"
   },
   "breadcrumb": {
     "TOP": "TOP"

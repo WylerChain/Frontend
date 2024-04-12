@@ -1,4 +1,4 @@
-// クライアントーコンポーネント用設定ファイル
+// Configuration file for client components
 "use client";
 
 import i18next, { Namespace } from "i18next";
@@ -6,14 +6,15 @@ import {
   initReactI18next,
   useTranslation as useTranslationOrg,
 } from "react-i18next";
+import { getOptions, PrefixOptions } from "./settings";
 import resourcesToBackend from "i18next-resources-to-backend";
-import { Language, getOptions, PrefixOptions } from "./settings";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18next
   .use(initReactI18next)
+  .use(LanguageDetector)
   .use(
     resourcesToBackend(
-      // NOTE: 型定義が提供されてない ^ any定義による影響の小ささから、一旦型定義は後回しにする
       (language: any, namespace: any) =>
         import(`./languages/${language}/${namespace}.json`)
     )
@@ -21,13 +22,8 @@ i18next
   .init(getOptions());
 
 /**
- * @description client component用の翻訳hooks
+ * @description Translation hooks for client components
  */
-export const useTranslation = (
-  lng: Language,
-  ns?: Namespace,
-  options?: PrefixOptions
-) => {
-  if (i18next.resolvedLanguage !== lng) i18next.changeLanguage(lng);
+export const useTranslation = (ns?: Namespace, options?: PrefixOptions) => {
   return useTranslationOrg(ns, options);
 };

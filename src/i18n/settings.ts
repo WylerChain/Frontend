@@ -25,7 +25,7 @@ export const NAMESPACE_OPTIONS = {
   common: "common",
   auth: "auth",
   account: "account",
-  auction: "auction",
+  luxary: "luxary",
 } as const;
 export const DEFAULT_NS = NAMESPACE_OPTIONS.common;
 
