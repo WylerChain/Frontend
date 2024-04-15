@@ -2,21 +2,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Typography, Grid } from "@mui/material";
-import { makeStyles } from "@material-ui/core/";
 import { COLORS } from "@/utils/colors";
 import { technologyType } from "@/types";
-
-const useStyles = makeStyles((theme) => ({
-  typography: {
-    lineHeight: "24px",
-    [theme.breakpoints.down("lg")]: {
-      display: "block",
-    },
-    [theme.breakpoints.down("md")]: {
-      display: "inline",
-    },
-  },
-}));
 
 export type TechnologyCardProps = technologyType;
 
@@ -25,7 +12,6 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
   desc,
   img,
 }) => {
-  const classes = useStyles();
   return (
     <Grid
       container
@@ -48,12 +34,7 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
         <Box mt={"32px"}>
           {desc.split("\n").map((item, i) => {
             return (
-              <Typography
-                variant="h4"
-                sx={{ color: COLORS.grey }}
-                key={i}
-                className={classes.typography}
-              >
+              <Typography variant="h4" sx={{ color: COLORS.grey }} key={i}>
                 {item}
               </Typography>
             );

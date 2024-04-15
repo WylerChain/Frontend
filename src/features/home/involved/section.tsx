@@ -1,22 +1,9 @@
 "use client";
 import React, { FC } from "react";
 import Image from "next/image";
-import { Box, Button, Typography } from "@mui/material";
-import { makeStyles } from "@material-ui/core/";
+import { Box, Typography } from "@mui/material";
 import { COLORS } from "@/utils/colors";
 import { involvedType } from "@/types";
-
-const useStyles = makeStyles((theme) => ({
-  typography: {
-    lineHeight: "24px",
-    [theme.breakpoints.down("lg")]: {
-      display: "block",
-    },
-    [theme.breakpoints.down("md")]: {
-      display: "inline",
-    },
-  },
-}));
 
 export type InvolvedSectionProps = involvedType;
 
@@ -25,7 +12,6 @@ export const InvolvedSection: React.FC<InvolvedSectionProps> = ({
   desc,
   img,
 }) => {
-  const classes = useStyles();
   return (
     <Box>
       <Box pt={"20px"} pb={"20px"} mb={"28px"}>
@@ -38,7 +24,6 @@ export const InvolvedSection: React.FC<InvolvedSectionProps> = ({
             sx={{
               fontWeight: 600,
             }}
-            className={classes.typography}
             key={i}
           >
             {item}
@@ -54,7 +39,6 @@ export const InvolvedSection: React.FC<InvolvedSectionProps> = ({
               style={{
                 color: COLORS.white80,
               }}
-              className={classes.typography}
             >
               {item}
             </Typography>

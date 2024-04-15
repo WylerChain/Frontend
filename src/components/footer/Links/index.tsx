@@ -9,7 +9,9 @@ export type LinksProps = {};
 
 export const Links: React.FC<LinksProps> = ({}) => {
   return (
-    <Box>
+    <Box
+    // sx={{ width: "256px", marginLeft: "auto", marginRight: "auto" }}
+    >
       <Typography
         variant="h5"
         sx={{
@@ -21,39 +23,41 @@ export const Links: React.FC<LinksProps> = ({}) => {
       >
         QUICK LINKS
       </Typography>
-      <Box
-      // sx={{ display: "flex", justifyContent: "center" }}
-      >
-        <List
-          sx={{
-            "&  li": {
-              padding: "4px 8px!important",
-            },
-            "& a": {
-              textDecoration: "none",
-              "&:hover": {
-                cursor: "pointer",
+      <Box>
+        <Box>
+          <List
+            sx={{
+              position: "inherit",
+              "&  li": {
+                padding: "4px 8px!important",
               },
-            },
-          }}
-        >
-          {menudata.map((item, i) => {
-            return (
-              <ListItem
-                key={i}
-                sx={{
-                  marginTop: "5px",
-                }}
-              >
-                <Link href={item.url}>
-                  <Typography variant="h6" sx={{ color: COLORS.grey }}>
-                    {item.title}
-                  </Typography>
-                </Link>
-              </ListItem>
-            );
-          })}
-        </List>
+              "& a": {
+                textDecoration: "none",
+                "&:hover": {
+                  cursor: "pointer",
+                },
+              },
+            }}
+          >
+            {menudata.map((item, i) => {
+              return (
+                <ListItem
+                  key={i}
+                  sx={{
+                    marginTop: "5px",
+                    position: "inherit",
+                  }}
+                >
+                  <Link href={item.url}>
+                    <Typography variant="h6" sx={{ color: COLORS.grey }}>
+                      {item.title}
+                    </Typography>
+                  </Link>
+                </ListItem>
+              );
+            })}
+          </List>
+        </Box>
       </Box>
     </Box>
   );
