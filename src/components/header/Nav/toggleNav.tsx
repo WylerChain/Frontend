@@ -1,29 +1,29 @@
+"use client";
 import React, { FC } from "react";
 import { Box, List, ListItem, Link, Button } from "@mui/material";
 import { COLORS } from "@/utils/colors";
 import { menudata } from "@/utils/contents";
 export type NavProps = {
-  toggle: boolean;
+  show: boolean;
 };
 
-export const ToggleNav: React.FC<NavProps> = ({ toggle }) => {
+export const ToggleNav: React.FC<NavProps> = ({ show }) => {
   return (
     <Box
       className="test-box"
       sx={{
-        marginTop: "15px",
+        marginTop: "14px",
         overflow: "hidden auto",
-        height: "calc(-62px + 100vh)",
-        // display: `${toggle == true ? "block" : "none"}`,
+
         display: {
-          lg: "",
-          md: "",
-          sm: "",
-          xs: "",
+          lg: "none",
+          md: "none",
+          xs: show ? "block" : "none",
+          sm: show ? "block" : "none",
         },
-        position: "fixed",
         top: "80px",
         width: "100%",
+        height: "100vh",
         backgroundColor: COLORS.white,
       }}
     >
@@ -32,7 +32,6 @@ export const ToggleNav: React.FC<NavProps> = ({ toggle }) => {
           backgroundColor: COLORS.white,
           paddingLeft: "23px",
           paddingTop: "12px",
-          height: "calc(-62px + 100vh)",
           position: "sticky",
 
           "&  li": {
@@ -51,8 +50,10 @@ export const ToggleNav: React.FC<NavProps> = ({ toggle }) => {
       >
         {menudata.map((item, i) => {
           return (
-            <ListItem key={i}>
-              <Link href={item.url}>{item.title}</Link>
+            <ListItem key={i} sx={{ textAlign: "center", display: "block" }}>
+              <Link href={item.url} sx={{ textAlign: "center" }}>
+                {item.title}
+              </Link>
             </ListItem>
           );
         })}

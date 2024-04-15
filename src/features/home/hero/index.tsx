@@ -71,6 +71,7 @@ export const Hero: React.FC<HeroProps> = ({}) => {
               variant="contained"
               disableElevation
               sx={{
+                position: "inherit",
                 backgroundColor: "#fff",
                 color: "#000",
                 fontWeight: "600",
@@ -86,6 +87,7 @@ export const Hero: React.FC<HeroProps> = ({}) => {
               variant="outlined"
               disableElevation
               sx={{
+                position: "inherit",
                 background: "transparent",
                 borderRadius: "90px",
                 borderColor: "#fff",

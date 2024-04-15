@@ -1,23 +1,10 @@
 "use client";
 import React, { FC } from "react";
 import Image from "next/image";
-import { Grid, Box, Button, Typography } from "@mui/material";
-import { makeStyles } from "@material-ui/core/";
+import { Grid, Box, Typography } from "@mui/material";
 
 import { COLORS } from "@/utils/colors";
 import { CommunityType } from "@/types";
-
-const useStyles = makeStyles((theme) => ({
-  typography: {
-    lineHeight: "24px",
-    [theme.breakpoints.down("lg")]: {
-      display: "block",
-    },
-    [theme.breakpoints.down("md")]: {
-      display: "inline",
-    },
-  },
-}));
 
 export type CommunityCardProps = CommunityType;
 
@@ -26,7 +13,6 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
   desc,
   img,
 }) => {
-  const classes = useStyles();
   return (
     <Grid>
       <Box pt={"20px"} pb={"20px"} mb={"38px"}>
@@ -52,7 +38,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
       <Box sx={{ color: COLORS.grey }} mt={"16px"}>
         {desc.split("\n").map((item, i) => {
           return (
-            <Typography variant="h4" key={i} className={classes.typography}>
+            <Typography variant="h4" key={i}>
               {item}
             </Typography>
           );
