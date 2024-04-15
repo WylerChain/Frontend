@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import { COLORS } from "@/utils/colors";
 import { FONTSIZE } from "@/utils/fonts";
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+
 import { Box } from "@mui/system";
 import { involvedData } from "@/utils/contents";
 import { InvolvedSection } from "./section";
@@ -12,33 +13,45 @@ export const Involved: React.FC<InvolvedProps> = ({}) => {
   return (
     <Box
       sx={{
-        borderRadius: "20px",
-        backgroundColor: COLORS.green,
-        color: "#fff",
+        padding: {
+          sm: "0px",
+          xs: "0px 20px",
+        },
       }}
-      p={"48px"}
-      gap={"24px"}
     >
-      <Typography
+      <Box
         sx={{
-          fontFamily: "Bricolage Grotesque",
-          fontSize: FONTSIZE.xl,
-          textAlign: "center",
+          borderRadius: "20px",
+          backgroundColor: COLORS.green,
+          color: "#fff",
         }}
+        p={"48px"}
+        gap={2}
       >
-        Get Involved
-      </Typography>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-        {involvedData.map((item, i) => {
-          return (
-            <InvolvedSection
-              title={item.title}
-              desc={item.desc}
-              img={item.img}
-              key={i}
-            />
-          );
-        })}
+        <Typography
+          variant="subtitle1"
+          sx={{
+            textAlign: {
+              sm: "left",
+              md: "center",
+            },
+          }}
+        >
+          Get Involved
+        </Typography>
+        <Grid container columns={{ md: 8, lg: 12 }}>
+          {involvedData.map((item, i) => {
+            return (
+              <Grid item key={i} lg={4} md={4}>
+                <InvolvedSection
+                  title={item.title}
+                  desc={item.desc}
+                  img={item.img}
+                />
+              </Grid>
+            );
+          })}
+        </Grid>
       </Box>
     </Box>
   );

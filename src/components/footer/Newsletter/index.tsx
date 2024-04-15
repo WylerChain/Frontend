@@ -7,33 +7,35 @@ export type NewsletterProps = {};
 
 export const Newsletter: React.FC<NewsletterProps> = ({}) => {
   return (
-    <Box>
+    <Box
+    // sx={{ width: "256px", marginLeft: "auto", marginRight: "auto" }}
+    >
       <Typography
+        variant="h5"
         sx={{
-          fontSize: "12px",
           fontWeight: 600,
-          fontFamily: "poppins",
+          color: COLORS.black,
         }}
       >
         Newsletter
       </Typography>
-      <Typography
-        sx={{
-          fontSize: FONTSIZE.xs,
-          lineHeight: "24px",
-          color: COLORS.black,
-          fontFamily: "poppins",
-        }}
-        mt={"12px"}
-      >
-        <span style={{ display: "block" }}>
-          Subscribe our newsletter to get
-        </span>
-        <span style={{ display: "block" }}>more free design course and</span>
-        <span style={{ display: "block" }}>resource.</span>
-      </Typography>
       <Box>
-        {/* <Input />
+        <Typography
+          variant="h5"
+          sx={{
+            color: COLORS.black,
+            lineHeight: "24px",
+          }}
+          mt={"12px"}
+        >
+          <span style={{ display: "block" }}>
+            Subscribe our newsletter to get
+          </span>
+          <span style={{ display: "block" }}>more free design course and</span>
+          <span style={{ display: "block" }}>resource.</span>
+        </Typography>
+        <Box>
+          {/* <Input />
         <Button
           sx={{
             backgroundColor: COLORS.green,
@@ -45,6 +47,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({}) => {
         >
           <ArrowForwardIcon sx={{ color: "#fff", fontSize: "15px" }} />
         </Button> */}
+        </Box>
       </Box>
     </Box>
   );

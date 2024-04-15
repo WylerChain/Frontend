@@ -11,38 +11,50 @@ export const Links: React.FC<LinksProps> = ({}) => {
   return (
     <Box>
       <Typography
+        variant="h5"
         sx={{
-          fontFamily: "poppins",
           fontWeight: 600,
-          fontSize: "12px",
+          color: COLORS.black90,
+
+          // textAlign: "center",
         }}
       >
         QUICK LINKS
       </Typography>
-      <List
-        sx={{
-          "&  li": {
-            padding: "4px 8px!important",
-          },
-          "& a": {
-            textDecoration: "none",
-            fontSize: FONTSIZE.xs,
-            fontFamily: "poppins",
-            color: COLORS.grey,
-            "&:hover": {
-              cursor: "pointer",
-            },
-          },
-        }}
+      <Box
+      // sx={{ display: "flex", justifyContent: "center" }}
       >
-        {menudata.map((item, i) => {
-          return (
-            <ListItem key={i}>
-              <Link href={item.url}>{item.title}</Link>
-            </ListItem>
-          );
-        })}
-      </List>
+        <List
+          sx={{
+            "&  li": {
+              padding: "4px 8px!important",
+            },
+            "& a": {
+              textDecoration: "none",
+              "&:hover": {
+                cursor: "pointer",
+              },
+            },
+          }}
+        >
+          {menudata.map((item, i) => {
+            return (
+              <ListItem
+                key={i}
+                sx={{
+                  marginTop: "5px",
+                }}
+              >
+                <Link href={item.url}>
+                  <Typography variant="h6" sx={{ color: COLORS.grey }}>
+                    {item.title}
+                  </Typography>
+                </Link>
+              </ListItem>
+            );
+          })}
+        </List>
+      </Box>
     </Box>
   );
 };

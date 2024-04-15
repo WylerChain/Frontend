@@ -11,7 +11,7 @@ export const Logo: React.FC<LogoProps> = ({}) => {
         fontSize: "42px",
         color: `${COLORS.black}`,
         pr: "20px",
-        borderRight: `1px solid ${COLORS.greyLight}`,
+        // borderRight: `1px solid ${COLORS.greyLight}`,
         fontFamily: "Bricolage Grotesque",
         fontWeight: 600,
       }}

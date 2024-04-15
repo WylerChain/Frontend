@@ -3,36 +3,41 @@ import React, { FC } from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import { FONTSIZE } from "@/utils/fonts";
 import { communityData } from "@/utils/contents";
+import { COLORS } from "@/utils/colors";
 import { CommunityCard } from "./card";
 export type CommunityProps = {};
 
 export const Community: React.FC<CommunityProps> = ({}) => {
   return (
-    <Box>
+    <Box
+      py={"62px"}
+      sx={{
+        padding: {
+          xs: "50px 20px 0 20px",
+        },
+      }}
+    >
       <Typography
+        variant="subtitle1"
         sx={{
-          fontFamily: "Bricolage Grotesque",
-          fontSize: FONTSIZE.xl,
           textAlign: "center",
-          fontWeight: 600,
+          color: COLORS.black,
         }}
         pb={"32px"}
       >
         Community:
       </Typography>
       <Box>
-        <Grid container columns={4} gap={"32px"}>
+        <Grid container columns={{ lg: 12, md: 8, sm: 1 }} spacing={4}>
           {communityData.map((item, i) => {
             return (
-              <>
-                <Grid item key={i}>
-                  <CommunityCard
-                    title={item.title}
-                    desc={item.desc}
-                    img={item.img}
-                  />
-                </Grid>
-              </>
+              <Grid item sm={1} md={4} lg={6} key={i}>
+                <CommunityCard
+                  title={item.title}
+                  desc={item.desc}
+                  img={item.img}
+                />
+              </Grid>
             );
           })}
         </Grid>

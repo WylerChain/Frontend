@@ -2,12 +2,26 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Button, Typography } from "@mui/material";
-import { FONTSIZE } from "@/utils/fonts";
+import { makeStyles } from "@material-ui/core/";
 import { COLORS } from "@/utils/colors";
 import { benefitsType } from "@/types";
+
+const useStyles = makeStyles((theme) => ({
+  typography: {
+    lineHeight: "24px",
+    [theme.breakpoints.down("lg")]: {
+      display: "block",
+    },
+    [theme.breakpoints.down("md")]: {
+      display: "inline",
+    },
+  },
+}));
+
 export type BenefitCardProps = benefitsType;
 
 export const BenefitCard: React.FC<BenefitCardProps> = ({ title, desc }) => {
+  const classes = useStyles();
   return (
     <Box>
       <Box
@@ -21,29 +35,19 @@ export const BenefitCard: React.FC<BenefitCardProps> = ({ title, desc }) => {
       {title.split("\n").map((item, i) => {
         return (
           <Typography
-            sx={{
-              color: COLORS.dark,
-              fontSize: FONTSIZE.md,
-              fontWeight: 600,
-              lineHeight: "24px",
-            }}
+            variant="h3"
             key={i}
+            sx={{ color: COLORS.black90 }}
+            className={classes.typography}
           >
             {item}
           </Typography>
         );
       })}
-      <Box sx={{ color: COLORS.grey, fontFamily: "poppins" }} mt={"16px"}>
+      <Box sx={{ color: COLORS.grey }} mt={"16px"}>
         {desc.map((item, i) => {
           return (
-            <Typography
-              key={i}
-              style={{
-                lineHeight: "24px",
-                fontFamily: "poppins",
-                fontSize: FONTSIZE.xs,
-              }}
-            >
+            <Typography variant="h5" key={i} className={classes.typography}>
               {item}
             </Typography>
           );

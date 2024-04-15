@@ -11,13 +11,18 @@ import {
 } from "@/features/home";
 export default function Home() {
   return (
-    <main>
+    <Box>
       <Hero />
-      <Box sx={{ width: "1124px", margin: "auto" }}>
+      <Box
+        sx={{
+          maxWidth: "1124px",
+          margin: "auto",
+        }}
+      >
         <Intro />
         <Benefits />
       </Box>
-      <Box sx={{ width: "1124px", margin: "auto" }}>
+      <Box sx={{ maxWidth: "1124px", margin: "auto" }}>
         <Box mt={"150px"}>
           <Involved />
         </Box>
@@ -25,6 +30,6 @@ export default function Home() {
         <Workout />
         <Community />
       </Box>
-    </main>
+    </Box>
   );
 }

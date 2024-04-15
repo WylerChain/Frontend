@@ -1,20 +1,9 @@
 "use client";
 import React, { FC } from "react";
 import { Box, Button, Typography } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
 export type HeroProps = {};
 
 export const Hero: React.FC<HeroProps> = ({}) => {
-  const theme = createTheme();
-  theme.typography.h3 = {
-    fontSize: "1.2rem",
-    "@media (min-width:600px)": {
-      fontSize: "1.5rem",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "2.4rem",
-    },
-  };
   return (
     <>
       <Box
@@ -43,26 +32,9 @@ export const Hero: React.FC<HeroProps> = ({}) => {
               textAlign: "center",
             }}
           >
-            <Typography
-              variant="h3"
-              sx={{
-                display: "block",
-                fontSize: "64px",
-                fontFamily: "Bricolage Grotesque",
-              }}
-            >
-              Unleash the Power of Fiction:
-            </Typography>
-
-            <Typography
-              variant="h3"
-              sx={{
-                display: "block",
-                fontSize: "64px",
-                fontFamily: "Bricolage Grotesque",
-              }}
-            >
-              Introducing Fiction Chain
+            <Typography variant="subtitle1">
+              <span className="block">Unleash the Power of Fiction:</span>
+              <span className="block">Introducing Fiction Chain</span>
             </Typography>
           </Box>
           <Box
@@ -74,48 +46,35 @@ export const Hero: React.FC<HeroProps> = ({}) => {
             mt={""}
           >
             <Typography
-              variant="h3"
+              variant="h4"
               sx={{
-                display: "block",
-                fontSize: "16px",
-                color: "#EFEFEF",
-                fontFamily: "poppins",
-              }}
-            >
-              A next-generation Layer 3 blockchain built for limitless
-              innovation
-            </Typography>
-            <Typography
-              variant="h3"
-              sx={{
-                display: "block",
-                fontSize: "16px",
-                lineHeight: "27px",
                 color: "#EFEFEF",
               }}
             >
-              and scalability.
+              <span className="block">
+                A next-generation Layer 3 blockchain built for limitless
+                innovation
+              </span>
+              <span className="block">and scalability.</span>
             </Typography>
           </Box>
           <Box
             sx={{
               display: "flex",
               columnGap: "16px",
-              "& button": {
-                padding: "16px 24px",
-                fontFamily: "poppins",
-              },
-              fontFamily: "poppins",
+              // "& button": {
+              //   padding: "16px 24px",
+              // },
             }}
           >
             <Button
               variant="contained"
               disableElevation
               sx={{
-                borderRadius: "90px",
                 backgroundColor: "#fff",
                 color: "#000",
                 fontWeight: "600",
+                padding: "16px 34px",
                 "&:hover": {
                   backgroundColor: "#fff",
                 },

@@ -9,9 +9,8 @@ export const Copyright: React.FC<CopyrightProps> = ({}) => {
   return (
     <Box>
       <Typography
+        variant="h6"
         sx={{
-          fontFamily: "poppins",
-          fontSize: FONTSIZE.xs,
           color: COLORS.grey,
         }}
       >

@@ -1,12 +1,21 @@
-const dark = "#000";
-const black = "#23262F";
-const green = "#45B26B";
+const black = "#000";
+const black90 = "#23262F";
+const white = "#fff";
+const white90 = "#FCFCFD";
+const white80 = "#F6F6F6";
 const grey = "#777E90";
-const greyLight = "#E6E8EC";
+const grey90 = "#868686";
+const green = "#45B26B";
+
+// const gray1 =
+
 export const COLORS = {
-  dark,
   black,
-  green,
+  black90,
+  white,
+  white90,
+  white80,
   grey,
-  greyLight,
+  grey90,
+  green,
 } as const;
