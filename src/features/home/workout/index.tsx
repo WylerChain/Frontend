@@ -2,64 +2,70 @@ import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Typography, Grid } from "@mui/material";
 import { COLORS } from "@/utils/colors";
-import { FONTSIZE } from "@/utils/fonts";
 import { workouts } from "@/utils/contents";
 import { Paragraph } from "./paragraph";
 export type WorkoutProps = {};
 
 export const Workout: React.FC<WorkoutProps> = ({}) => {
   return (
-    <Box
+    <Grid
+      container
+      columns={{ sm: 2, xs: 1, md: 8, lg: 12 }}
+      columnSpacing={6}
+      py={"136px"}
       sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        paddingTop: "128px",
-        paddingBottom: "88px",
-        gap: "32px",
+        padding: {
+          sm: "0",
+          xs: "0px 20px",
+        },
       }}
     >
-      <Box>
+      <Grid item xs={1} sm={2} md={4} lg={6}>
         <Typography
+          variant="subtitle1"
           sx={{
             display: "block",
-            fontSize: "64px",
-            fontWeight: "600",
-            fontFamily: "Bricolage Grotesque",
-            lineHeight: "64px",
             marginBottom: "84px",
+            color: COLORS.black,
           }}
         >
           All your workouts,
           <span style={{ display: "block" }}>in your pocket</span>
         </Typography>
-        <Box
-          sx={{
-            "& p": {
-              fontFamily: "poppins",
-              fontSize: FONTSIZE.lg,
-              color: COLORS.grey,
-              display: "block",
-            },
-          }}
-        >
-          <Typography>
-            {/* <span style={{ color: COLORS.dark, fontWeight: 600 }}>
-              Endless Possibilities:
-            </span>
-            <span> Wyler Chain's versatility</span> */}
-          </Typography>
-          <Typography>opens doors to a vast array of dApp </Typography>
-          <Typography>applications. Imagine a future powered by:</Typography>
-        </Box>
-        <Box>
-          {workouts.map((item, i) => {
-            return <Paragraph desc={item} key={i}></Paragraph>;
-          })}
-        </Box>
-      </Box>
-      <Box>
-        <Image src={"/workout.svg"} width={540} height={598} alt="intro" />
-      </Box>
-    </Box>
+
+        <Typography variant="h2" sx={{ color: COLORS.grey }}>
+          <span style={{ color: COLORS.black, fontWeight: 600 }}>
+            Endless Possibilities:
+          </span>
+          <span style={{ fontWeight: 100, lineHeight: "32px" }}>
+            {" "}
+            Wyler Chain's versatility
+          </span>
+          <span
+            style={{ fontWeight: 100, display: "block", lineHeight: "32px" }}
+          >
+            opens doors to a vast array of dApp
+          </span>
+          <span style={{ fontWeight: 100, lineHeight: "32px" }}>
+            {" "}
+            applications. Imagine a future powered by:
+          </span>
+        </Typography>
+
+        {workouts.map((item, i) => {
+          return <Paragraph desc={item} key={i}></Paragraph>;
+        })}
+      </Grid>
+      <Grid item xs={1} sm={2} md={4} lg={6} sx={{ marginTop: "20px" }} pt={4}>
+        <Image
+          src={"/workout.svg"}
+          width={540}
+          height={598}
+          alt="intro"
+          layout="responsive"
+          sizes="(max-width: 768px) 100% 100%"
+        />
+      </Grid>
+    </Grid>
   );
 };

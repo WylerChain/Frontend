@@ -1,9 +1,17 @@
+"use client";
+import { useState } from "react";
 import { Box, Grid, Button } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Logo } from "@/components/header/Logo";
 import { Nav } from "@/components/header/Nav";
 import { Social } from "@/components/header/Social";
+import { ToggleNav } from "./Nav/toggleNav";
 import { COLORS } from "@/utils/colors";
 export const Header = () => {
+  const [isOpenToggleMenu, setIsOpenToggleMenu] = useState(false);
+  const toggleMenu = () => {
+    setIsOpenToggleMenu(!isOpenToggleMenu);
+  };
   return (
     <Box
       sx={{ width: { lg: 1124, sm: 600 }, height: 94 }}
@@ -41,9 +49,26 @@ export const Header = () => {
             >
               Learn more
             </Button>
+
+            <Button
+              sx={{
+                borderRadius: 0,
+                float: "left",
+                display: {
+                  xs: "block",
+                  sm: "block",
+                  md: "block",
+                  lg: "none",
+                },
+              }}
+              onClick={toggleMenu}
+            >
+              <MenuIcon sx={{ color: COLORS.grey }} />
+            </Button>
           </Box>
         </Grid>
       </Grid>
+      {/* <ToggleNav toggle={isOpenToggleMenu} /> */}
     </Box>
   );
 };

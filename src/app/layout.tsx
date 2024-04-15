@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Box } from "@mui/material";
+import { ThemeProvider } from "@/contexts/themeContext";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import "@/assets/scss/style.scss";
@@ -22,32 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Box
-          sx={{
-            borderTop: "1px solid #E6E8EC",
-          }}
-          mt={"150px"}
-        >
-          <Box
-            sx={{
-              width: "1124px",
-              margin: "auto",
-            }}
-          >
-            <Footer />
-          </Box>
-          <Box sx={{ borderTop: "1px solid #E6E8EC" }}>
-            <Box
-              sx={{ width: "1124px", margin: "auto" }}
-              pt={"20px"}
-              pb={"20px"}
-            >
-              <Copyright />
-            </Box>
-          </Box>
-        </Box>
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
