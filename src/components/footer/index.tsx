@@ -4,8 +4,6 @@ import { Logo } from "@/components/footer/Logo";
 import { Links } from "@/components/footer/Links";
 import { Newsletter } from "@/components/footer/Newsletter";
 import { Copyright } from "@/components/footer/Copyright";
-import { Social } from "@/components/footer/Social";
-import { display } from "@mui/system";
 
 export type FooterProps = {};
 
@@ -14,8 +12,8 @@ export const Footer: React.FC<FooterProps> = ({}) => {
     <Box
       sx={{
         padding: {
-          sm: "50px 0 0 0",
-          xs: "50px 20px 0 20px",
+          sm: "50px 10px 0  10px",
+          xs: "50px 10px 0 10px",
         },
       }}
     >

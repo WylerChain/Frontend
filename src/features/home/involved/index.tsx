@@ -14,8 +14,9 @@ export const Involved: React.FC<InvolvedProps> = ({}) => {
     <Box
       sx={{
         padding: {
-          sm: "0px",
-          xs: "0px 20px",
+          xs: "0px 10px",
+          sm: "0px 10px",
+          md: "0px 10px",
         },
       }}
     >

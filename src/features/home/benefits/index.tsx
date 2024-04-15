@@ -14,8 +14,9 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
       sx={{
         backgroundColor: "#FCFCFD",
         padding: {
-          sm: "0px 0",
-          xs: "0px 20px",
+          xs: "0 10px",
+          sm: "0 10px",
+          md: "0 10px",
         },
       }}
     >
@@ -40,7 +41,7 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
           <BenefitCard title={benefits[3].title} desc={benefits[3].desc} />
         </Grid>
       </Grid>
-      <Grid container columns={{ xs: 1, md: 12, lg: 12 }} spacing={4}>
+      <Grid container columns={{ xs: 1, md: 12, lg: 12 }} spacing={4} mt={4}>
         <Grid item xs={1} md={6} lg={3}>
           <BenefitCard title={benefits[4].title} desc={benefits[4].desc} />
         </Grid>

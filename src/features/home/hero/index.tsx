@@ -60,7 +60,12 @@ export const Hero: React.FC<HeroProps> = ({}) => {
           </Box>
           <Box
             sx={{
-              display: "flex",
+              display: {
+                lg: "flex",
+                md: "flex",
+                sm: "block",
+                xs: "block",
+              },
               columnGap: "16px",
               // "& button": {
               //   padding: "16px 24px",
@@ -71,6 +76,10 @@ export const Hero: React.FC<HeroProps> = ({}) => {
               variant="contained"
               disableElevation
               sx={{
+                width: {
+                  sm: "100%",
+                  xs: "100%",
+                },
                 position: "inherit",
                 backgroundColor: "#fff",
                 color: "#000",
@@ -79,6 +88,7 @@ export const Hero: React.FC<HeroProps> = ({}) => {
                 "&:hover": {
                   backgroundColor: "#fff",
                 },
+                marginTop: "10px",
               }}
             >
               Learn more
@@ -87,6 +97,10 @@ export const Hero: React.FC<HeroProps> = ({}) => {
               variant="outlined"
               disableElevation
               sx={{
+                width: {
+                  sm: "100%",
+                  xs: "100%",
+                },
                 position: "inherit",
                 background: "transparent",
                 borderRadius: "90px",
@@ -95,6 +109,7 @@ export const Hero: React.FC<HeroProps> = ({}) => {
                 "&:hover": {
                   borderColor: "#fff",
                 },
+                marginTop: "10px",
               }}
             >
               Explore Applications

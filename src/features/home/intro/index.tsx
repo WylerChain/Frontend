@@ -11,9 +11,9 @@ export const Intro: React.FC<IntroProps> = ({}) => {
     <Box
       sx={{
         padding: {
-          md: "134px 0",
-          sm: "50px 0",
-          xs: "50px 20px",
+          xs: "50px 10px",
+          sm: "50px 10px",
+          md: "134px 10px",
         },
       }}
     >

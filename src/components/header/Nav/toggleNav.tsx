@@ -17,7 +17,7 @@ export const ToggleNav: React.FC<NavProps> = ({ show }) => {
 
         display: {
           lg: "none",
-          md: "none",
+          md: show ? "block" : "none",
           xs: show ? "block" : "none",
           sm: show ? "block" : "none",
         },
@@ -30,7 +30,6 @@ export const ToggleNav: React.FC<NavProps> = ({ show }) => {
       <List
         sx={{
           backgroundColor: COLORS.white,
-          paddingLeft: "23px",
           paddingTop: "12px",
           position: "sticky",
 
@@ -57,6 +56,33 @@ export const ToggleNav: React.FC<NavProps> = ({ show }) => {
             </ListItem>
           );
         })}
+        <ListItem sx={{ textAlign: "center" }}>
+          <Button
+            variant="contained"
+            disableElevation
+            href=""
+            sx={{
+              width: "100%",
+              display: {
+                lg: "none",
+                md: "block",
+                sm: "block",
+                xs: "block",
+              },
+              backgroundColor: COLORS.green,
+              "&:hover": {
+                opacity: 0.8,
+                backgroundColor: COLORS.green,
+              },
+              color: "#fff",
+              padding: "16px 24px",
+              fontSize: "16px",
+              fontFamily: "poppins",
+            }}
+          >
+            Learn more
+          </Button>
+        </ListItem>
       </List>
     </Box>
   );

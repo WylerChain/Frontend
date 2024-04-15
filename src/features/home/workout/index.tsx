@@ -16,8 +16,9 @@ export const Workout: React.FC<WorkoutProps> = ({}) => {
       py={"136px"}
       sx={{
         padding: {
-          sm: "0",
-          xs: "0px 20px",
+          xs: "0px 10px",
+          sm: "0px 10px",
+          md: "0px 10px",
         },
       }}
     >
