@@ -13,8 +13,6 @@ export const ToggleNav: React.FC<NavProps> = ({ toggle }) => {
       sx={{
         marginTop: "15px",
         overflow: "hidden auto",
-        height: "calc(-62px + 100vh)",
-        // display: `${toggle == true ? "block" : "none"}`,
         display: {
           lg: "",
           md: "",
@@ -32,7 +30,6 @@ export const ToggleNav: React.FC<NavProps> = ({ toggle }) => {
           backgroundColor: COLORS.white,
           paddingLeft: "23px",
           paddingTop: "12px",
-          height: "calc(-62px + 100vh)",
           position: "sticky",
 
           "&  li": {

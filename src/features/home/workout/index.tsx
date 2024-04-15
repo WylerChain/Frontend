@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Typography, Grid } from "@mui/material";
@@ -38,7 +39,6 @@ export const Workout: React.FC<WorkoutProps> = ({}) => {
             Endless Possibilities:
           </span>
           <span style={{ fontWeight: 100, lineHeight: "32px" }}>
-            {" "}
             Wyler Chain's versatility
           </span>
           <span
