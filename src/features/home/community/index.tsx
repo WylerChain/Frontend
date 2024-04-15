@@ -13,7 +13,9 @@ export const Community: React.FC<CommunityProps> = ({}) => {
       py={"62px"}
       sx={{
         padding: {
-          xs: "50px 20px 0 20px",
+          xs: "50px 10px 0 10px",
+          sm: "0px 10px",
+          md: "0px 10px",
         },
       }}
     >

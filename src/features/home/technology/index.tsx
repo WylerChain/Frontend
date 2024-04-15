@@ -11,8 +11,9 @@ export const Technology: React.FC<TechnologyProps> = ({}) => {
       my={"180px"}
       sx={{
         padding: {
-          sm: "0 0",
-          xs: "0px 20px",
+          xs: "0px 10px",
+          sm: "0px 10px",
+          md: "0px 10px",
         },
       }}
     >
