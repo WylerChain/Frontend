@@ -77,6 +77,7 @@ export const Hero: React.FC<HeroProps> = ({}) => {
               disableElevation
               sx={{
                 width: {
+                  md: "250px",
                   sm: "100%",
                   xs: "100%",
                 },
