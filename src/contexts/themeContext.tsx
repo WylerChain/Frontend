@@ -35,7 +35,7 @@ const theme = createTheme({
     },
     h5: {
       fontSize: "14px",
-      lineHeight: "16px",
+      lineHeight: "24px",
     },
     h6: {
       fontSize: "12px",
