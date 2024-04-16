@@ -11,7 +11,7 @@ import {
 } from "@/features/home";
 export default function Home() {
   return (
-    <Box>
+    <Box sx={{ marginTop: "94px" }}>
       <Hero />
       <Box
         sx={{

@@ -2,6 +2,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Typography, Grid } from "@mui/material";
+import { responsiveParagraph } from "./style.css";
+
 import { COLORS } from "@/utils/colors";
 import { technologyType } from "@/types";
 
@@ -34,7 +36,12 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
         <Box mt={"32px"}>
           {desc.split("\n").map((item, i) => {
             return (
-              <Typography variant="h4" sx={{ color: COLORS.grey }} key={i}>
+              <Typography
+                variant="h4"
+                sx={{ color: COLORS.grey }}
+                key={i}
+                className={responsiveParagraph}
+              >
                 {item}
               </Typography>
             );
@@ -47,7 +54,6 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
           width={500}
           height={500}
           alt="intro"
-          layout="responsive"
           sizes="(max-width: 768px) 100% 100%"
         />
       </Grid>

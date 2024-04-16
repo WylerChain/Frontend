@@ -10,19 +10,19 @@ export type CommunityProps = {};
 export const Community: React.FC<CommunityProps> = ({}) => {
   return (
     <Box
-      py={"62px"}
       sx={{
         padding: {
           xs: "50px 10px 0 10px",
           sm: "0px 10px",
           md: "0px 10px",
+          lg: "62px 10px",
         },
       }}
     >
       <Typography
         variant="subtitle1"
         sx={{
-          textAlign: "center",
+          textAlign: { md: "center", xs: "left" },
           color: COLORS.black,
         }}
         pb={"32px"}
@@ -30,7 +30,7 @@ export const Community: React.FC<CommunityProps> = ({}) => {
         Community:
       </Typography>
       <Box>
-        <Grid container columns={{ lg: 12, md: 8, sm: 1 }} spacing={4}>
+        <Grid container columns={{ lg: 12, md: 8, sm: 1 }} spacing={3}>
           {communityData.map((item, i) => {
             return (
               <Grid item sm={1} md={4} lg={6} key={i}>

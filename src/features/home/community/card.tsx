@@ -2,6 +2,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import { Grid, Box, Typography } from "@mui/material";
+import { responsiveParagraph } from "./style.css";
 
 import { COLORS } from "@/utils/colors";
 import { CommunityType } from "@/types";
@@ -21,7 +22,6 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
           width={544}
           height={402}
           alt="be"
-          layout="responsive"
           sizes="(max-width: 768px) 100% 100%"
         />
       </Box>
@@ -38,7 +38,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
       <Box sx={{ color: COLORS.grey }} mt={"16px"}>
         {desc.split("\n").map((item, i) => {
           return (
-            <Typography variant="h4" key={i}>
+            <Typography variant="h4" key={i} className={responsiveParagraph}>
               {item}
             </Typography>
           );

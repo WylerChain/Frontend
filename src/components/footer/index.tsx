@@ -52,8 +52,6 @@ export const Footer: React.FC<FooterProps> = ({}) => {
                   <Newsletter />
                 </Box>
               </Grid>
-              {/* <Grid item xs={1} sm={1} md={4} lg={4}></Grid> */}
-              {/* <Social /> */}
             </Grid>
           </Box>
         </Box>

@@ -8,8 +8,6 @@ export const Logo: React.FC<LogoProps> = ({}) => {
     <Box
       sx={{
         display: "flex",
-        // justifyContent: "center",
-        // alignItems: "center",
         verticalAlign: "middle",
       }}
     >

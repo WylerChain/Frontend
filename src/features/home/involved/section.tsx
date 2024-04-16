@@ -2,6 +2,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
+import { responsiveParagraph } from "./style.css";
 import { COLORS } from "@/utils/colors";
 import { involvedType } from "@/types";
 
@@ -25,6 +26,7 @@ export const InvolvedSection: React.FC<InvolvedSectionProps> = ({
               fontWeight: 600,
             }}
             key={i}
+            className={responsiveParagraph}
           >
             {item}
           </Typography>
@@ -39,6 +41,7 @@ export const InvolvedSection: React.FC<InvolvedSectionProps> = ({
               style={{
                 color: COLORS.white80,
               }}
+              className={responsiveParagraph}
             >
               {item}
             </Typography>

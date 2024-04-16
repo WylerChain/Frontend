@@ -27,7 +27,7 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
       >
         Benefits of Wyler Chain
       </Typography>
-      <Grid container columns={{ xs: 1, sm: 4, md: 12, lg: 12 }} spacing={4}>
+      <Grid container columns={{ xs: 1, sm: 4, md: 12, lg: 12 }} spacing={3}>
         <Grid item xs={1} sm={2} md={6} lg={3}>
           <BenefitCard title={benefits[0].title} desc={benefits[0].desc} />
         </Grid>
@@ -41,7 +41,7 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
           <BenefitCard title={benefits[3].title} desc={benefits[3].desc} />
         </Grid>
       </Grid>
-      <Grid container columns={{ xs: 1, md: 12, lg: 12 }} spacing={4} mt={4}>
+      <Grid container columns={{ xs: 1, md: 12, lg: 12 }} spacing={3} mt={4}>
         <Grid item xs={1} md={6} lg={3}>
           <BenefitCard title={benefits[4].title} desc={benefits[4].desc} />
         </Grid>
