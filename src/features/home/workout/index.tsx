@@ -64,6 +64,7 @@ export const Workout: React.FC<WorkoutProps> = ({}) => {
           width={540}
           height={598}
           alt="workout"
+          layout="responsive"
           sizes="(max-width: 768px) 100% 100%"
         />
       </Grid>

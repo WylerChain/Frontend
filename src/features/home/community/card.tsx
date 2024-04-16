@@ -22,6 +22,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
           width={544}
           height={402}
           alt="be"
+          layout="responsive"
           sizes="(max-width: 768px) 100% 100%"
         />
       </Box>

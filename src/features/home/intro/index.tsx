@@ -68,6 +68,7 @@ export const Intro: React.FC<IntroProps> = ({}) => {
             width={500}
             height={500}
             alt="intro"
+            layout="responsive"
             sizes="(max-width: 768px) 80% 80%"
           />
         </Grid>
