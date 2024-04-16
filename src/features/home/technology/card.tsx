@@ -54,6 +54,7 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
           width={500}
           height={500}
           alt="intro"
+          layout="responsive"
           sizes="(max-width: 768px) 100% 100%"
         />
       </Grid>
