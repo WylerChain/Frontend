@@ -33,8 +33,8 @@ export const Hero: React.FC<HeroProps> = ({}) => {
             }}
           >
             <Typography variant="subtitle1">
-              <span className="block">Unleash the Power of Fiction:</span>
-              <span className="block">Introducing Fiction Chain</span>
+              <span className="block">Unleash the Power of Wyler:</span>
+              <span className="block">Introducing Wyler Chain</span>
             </Typography>
           </Box>
           <Box

@@ -18,7 +18,8 @@ export const Header = () => {
     <Box
       sx={{
         height: 94,
-        position: "sticky",
+        position: "fixed",
+        width: "100%",
         top: 0,
         backgroundColor: "#fff",
       }}

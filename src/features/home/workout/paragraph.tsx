@@ -2,6 +2,8 @@
 import React, { FC } from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
+import { responsiveParagraph } from "./style.css";
+
 import { COLORS } from "@/utils/colors";
 import { FONTSIZE } from "@/utils/fonts";
 
@@ -35,7 +37,12 @@ export const Paragraph: React.FC<ParagraphProps> = ({ desc }) => {
           {desc.split("\n").map((item, i) => {
             return (
               <>
-                <Typography variant="h4" sx={{ color: COLORS.grey }} key={i}>
+                <Typography
+                  variant="h4"
+                  sx={{ color: COLORS.grey }}
+                  key={i}
+                  className={responsiveParagraph}
+                >
                   {item}
                 </Typography>
               </>

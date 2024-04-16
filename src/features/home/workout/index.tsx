@@ -19,6 +19,7 @@ export const Workout: React.FC<WorkoutProps> = ({}) => {
           xs: "0px 10px",
           sm: "0px 10px",
           md: "0px 10px",
+          lg: "136px 0px",
         },
       }}
     >
@@ -62,8 +63,7 @@ export const Workout: React.FC<WorkoutProps> = ({}) => {
           src={"/workout.svg"}
           width={540}
           height={598}
-          alt="intro"
-          layout="responsive"
+          alt="workout"
           sizes="(max-width: 768px) 100% 100%"
         />
       </Grid>

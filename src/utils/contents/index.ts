@@ -88,12 +88,12 @@ export const benefits: benefitsType[] = [
 export const technologies: technologyType[] = [
   {
     title: "Understanding Layer 3",
-    desc: "Traditional blockchains often struggle with\nscalability. Layer 3 solutions like Fiction Chain\naddress this by introducing a new layer on top of\nexisting Layer 1 (base layer) and Layer 2 (scaling\nsolutions) blockchains. This layered approach\ndistributes the workload, enabling Wyler Chain to\nhandle a significantly higher volume of\ntransactions.",
+    desc: "Traditional blockchains often struggle with\nscalability. Layer 3 solutions like Wyler Chain\naddress this by introducing a new layer on top of\nexisting Layer 1 (base layer) and Layer 2 (scaling\nsolutions) blockchains. This layered approach\ndistributes the workload, enabling Wyler Chain to\nhandle a significantly higher volume of\ntransactions.",
     img: "/tech1.svg",
   },
   {
     title: "The Power of Polkadot and Substrate",
-    desc: "Wyler Chain leverages the transformative potential\nof Polkadot and Substrate. Polkadot, a next-\ngeneration blockchain protocol, facilitates\nseamless communication between different\nblockchains. Substrate, a powerful blockchain\ndevelopment framework built on Polkadot,\nempowers developers to create custom\nblockchains like Fiction Chain with unique\nfunctionalities.",
+    desc: "Wyler Chain leverages the transformative potential\nof Polkadot and Substrate. Polkadot, a next-\ngeneration blockchain protocol, facilitates\nseamless communication between different\nblockchains. Substrate, a powerful blockchain\ndevelopment framework built on Polkadot,\nempowers developers to create custom\nblockchains like Wyler Chain with unique\nfunctionalities.",
     img: "/tech2.svg",
   },
   {
@@ -119,7 +119,7 @@ export const involvedData: involvedType[] = [
     img: "/involved1.svg",
   },
   {
-    title: "Build on Fiction Chain",
+    title: "Build on Wyler Chain",
     desc: "The possibilities are endless.\nLeverage Wyler Chain's powerful\nfeatures to develop innovative dApps\nthat revolutionize various industries.",
     img: "/involved2.svg",
   },

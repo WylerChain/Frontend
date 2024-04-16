@@ -2,6 +2,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
+import { responsiveParagraph } from "./style.css";
 import { COLORS } from "@/utils/colors";
 import { benefitsType } from "@/types";
 
@@ -28,7 +29,7 @@ export const BenefitCard: React.FC<BenefitCardProps> = ({ title, desc }) => {
       <Box sx={{ color: COLORS.grey }} mt={"16px"}>
         {desc.map((item, i) => {
           return (
-            <Typography variant="h5" key={i}>
+            <Typography variant="h5" key={i} className={responsiveParagraph}>
               {item}
             </Typography>
           );
