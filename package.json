@@ -14,9 +14,13 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/x-charts": "^7.2.0",
+    "@studio-freight/react-lenis": "^0.0.47",
     "@vanilla-extract/css": "^1.14.2",
+    "framer-motion": "^11.1.1",
     "next": "14.1.0",
     "react": "^17.0.0 || ^18.0.0",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^17.0.0 || ^18.0.0",
     "sass": "^1.75.0",
     "styled-components": "^6.1.8"

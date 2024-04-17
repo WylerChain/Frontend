@@ -5,9 +5,9 @@ import { Grid, Box, Typography } from "@mui/material";
 import { responsiveParagraph } from "./style.css";
 
 import { COLORS } from "@/utils/colors";
-import { CommunityType } from "@/types";
+import { communityType } from "@/types";
 
-export type CommunityCardProps = CommunityType;
+export type CommunityCardProps = communityType;
 
 export const CommunityCard: React.FC<CommunityCardProps> = ({
   title,

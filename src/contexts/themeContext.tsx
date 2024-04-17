@@ -19,6 +19,10 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins",
+    h1: {
+      fontSize: "36px",
+      lineHeight: "49px",
+    },
     h2: {
       fontSize: "24px",
       lineHeight: "24px",

@@ -5,4 +5,18 @@ import { Involved } from "./involved";
 import { Technology } from "./technology";
 import { Workout } from "./workout";
 import { Community } from "./community";
-export { Hero, Intro, Benefits, Involved, Technology, Workout, Community };
+import { Team } from "./teams";
+import { Partner } from "./partners";
+import { Tokenomics } from "./tokenomics";
+export {
+  Hero,
+  Intro,
+  Benefits,
+  Involved,
+  Technology,
+  Workout,
+  Community,
+  Team,
+  Partner,
+  Tokenomics,
+};

@@ -35,3 +35,27 @@ body {
 .block {
   display: block;
 }
+
+.menuIcon-toggle {
+  top: 5px;
+  transform: translate3d(0, 5px, 0) rotate(135deg);
+  transition-delay: 0.1s;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.menuIcon-toggle::before {
+  top: 0;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+
+.menuIcon-toggle::after {
+  top: 10px;
+  transform: translate3d(0, -10px, 0) rotate(-270deg);
+  transition-delay: 0.1s;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
