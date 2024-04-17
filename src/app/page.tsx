@@ -8,28 +8,36 @@ import {
   Workout,
   Involved,
   Community,
+  Team,
+  Partner,
+  Tokenomics,
 } from "@/features/home";
 export default function Home() {
   return (
-    <Box sx={{ marginTop: "94px" }}>
-      <Hero />
-      <Box
-        sx={{
-          maxWidth: "1124px",
-          margin: "auto",
-        }}
-      >
-        <Intro />
-        <Benefits />
-      </Box>
-      <Box sx={{ maxWidth: "1124px", margin: "auto" }}>
-        <Box mt={"150px"}>
-          <Involved />
+    <>
+      <Box sx={{ marginTop: "94px" }}>
+        <Hero />
+        <Box
+          sx={{
+            maxWidth: "1124px",
+            margin: "auto",
+          }}
+        >
+          <Intro />
+          <Benefits />
         </Box>
-        <Technology />
-        <Workout />
-        <Community />
+        <Box sx={{ maxWidth: "1124px", margin: "auto" }}>
+          <Box mt={"150px"}>
+            <Involved />
+          </Box>
+          <Technology />
+          <Workout />
+          <Tokenomics />
+          <Team />
+          <Partner />
+          <Community />
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 }

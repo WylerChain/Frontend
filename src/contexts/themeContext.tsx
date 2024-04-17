@@ -19,6 +19,10 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins",
+    h1: {
+      fontSize: "36px",
+      lineHeight: "49px",
+    },
     h2: {
       fontSize: "24px",
       lineHeight: "24px",
@@ -76,6 +80,10 @@ theme.typography.subtitle1 = {
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "36px",
+    lineHeight: "36px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "28px",
     lineHeight: "36px",
   },
 };

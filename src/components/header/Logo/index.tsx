@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 export type LogoProps = {};
 import { COLORS } from "@/utils/colors";
 export const Logo: React.FC<LogoProps> = ({}) => {
+  const containerRef = React.useRef<HTMLElement>(null);
   return (
     <Box
       sx={{
@@ -15,8 +16,9 @@ export const Logo: React.FC<LogoProps> = ({}) => {
         fontFamily: "Bricolage Grotesque",
         fontWeight: 600,
       }}
+      ref={containerRef}
     >
-      <Box sx={{ mt: "10px" }}>
+      <Box sx={{ mt: "5px" }}>
         <Image src="/logo.svg" width={54} height={44} alt="logo" />
       </Box>
     </Box>

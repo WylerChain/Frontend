@@ -18,7 +18,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({}) => {
     <Box
     // sx={{ width: "256px", marginLeft: "auto", marginRight: "auto" }}
     >
-      <Typography
+      {/* <Typography
         variant="h5"
         sx={{
           fontWeight: 600,
@@ -26,9 +26,9 @@ export const Newsletter: React.FC<NewsletterProps> = ({}) => {
         }}
       >
         Newsletter
-      </Typography>
+      </Typography> */}
       <Box>
-        <Typography
+        {/* <Typography
           variant="h5"
           sx={{
             color: COLORS.black,
@@ -41,7 +41,7 @@ export const Newsletter: React.FC<NewsletterProps> = ({}) => {
           </span>
           <span style={{ display: "block" }}>more free design course and</span>
           <span style={{ display: "block" }}>resource.</span>
-        </Typography>
+        </Typography> */}
         <Box>
           {/* <Input />
           <Button

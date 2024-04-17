@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, List, ListItem, Link, Button } from "@mui/material";
+import { Box, List, ListItem, Link } from "@mui/material";
 import { COLORS } from "@/utils/colors";
 import { menudata } from "@/utils/contents";
 export type NavProps = {};
