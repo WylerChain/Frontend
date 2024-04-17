@@ -33,9 +33,10 @@ export const Intro: React.FC<IntroProps> = ({}) => {
 
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.5 + 0 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.8 + 0 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <Box
               sx={{
@@ -83,9 +84,10 @@ export const Intro: React.FC<IntroProps> = ({}) => {
           {/* <motion.section {...getSectionAnimation}> */}
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.5 + 1 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.8 + 1 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <Image
               src={"/intro-logo.svg"}

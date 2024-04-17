@@ -15,15 +15,14 @@ export const Team: React.FC<BenefitProps> = ({}) => {
     <Box
       id="team"
       sx={{
-        backgroundColor: "#FCFCFD",
         padding: {
-          xs: "0 10px",
-          sm: "0 10px",
-          md: "0 10px",
+          xs: "50px 10px",
+          sm: "50px 10px",
+          md: "50px 10px",
         },
       }}
     >
-      <motion.div {...getSectionAnimation}>
+      <motion.div {...getSectionAnimation} viewport={{ once: true }}>
         <Typography
           variant="subtitle1"
           sx={{ textAlign: { md: "center", xs: "left" }, color: COLORS.black }}

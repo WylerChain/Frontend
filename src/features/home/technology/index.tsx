@@ -26,7 +26,7 @@ export const Technology: React.FC<TechnologyProps> = ({}) => {
         },
       }}
     >
-      <motion.section {...getSectionAnimation}>
+      <motion.section {...getSectionAnimation} viewport={{ once: true }}>
         <Typography
           variant="subtitle1"
           sx={{
@@ -48,6 +48,7 @@ export const Technology: React.FC<TechnologyProps> = ({}) => {
               initial="hidden"
               whileInView="show"
               key={i}
+              viewport={{ once: true }}
             >
               <TechnologyCard
                 title={item.title}

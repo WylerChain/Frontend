@@ -9,7 +9,11 @@ export type SocialProps = {};
 export const Social: React.FC<SocialProps> = ({}) => {
   return (
     <Box
-      sx={{ display: "flex", columnGap: { lg: "24px", md: "5px" } }}
+      sx={{
+        display: "flex",
+        columnGap: { lg: "5px", md: "2px" },
+        pr: { lg: "10px", sm: "0px" },
+      }}
       pt={"5px"}
     >
       {/* <IconButton aria-label="facebook">

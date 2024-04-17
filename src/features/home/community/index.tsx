@@ -15,8 +15,8 @@ export const Community: React.FC<CommunityProps> = ({}) => {
       sx={{
         padding: {
           xs: "50px 10px 0 10px",
-          sm: "0px 10px",
-          md: "0px 10px",
+          sm: "50px 10px",
+          md: "50px 10px",
           lg: "62px 10px",
         },
       }}
@@ -26,6 +26,7 @@ export const Community: React.FC<CommunityProps> = ({}) => {
         variants={slideIn({ delay: 0.6 + 0 / 10, direction: "down" })}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true }}
       >
         <Typography
           variant="subtitle1"
@@ -48,6 +49,7 @@ export const Community: React.FC<CommunityProps> = ({}) => {
                   variants={slideIn({ delay: 0.6 + i / 10, direction: "down" })}
                   initial="hidden"
                   whileInView="show"
+                  viewport={{ once: true }}
                 >
                   <CommunityCard
                     title={item.title}

@@ -28,7 +28,7 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         },
       }}
     >
-      <motion.section {...getSectionAnimation}>
+      <motion.section {...getSectionAnimation} viewport={{ once: true }}>
         <Typography
           variant="subtitle1"
           sx={{ textAlign: { md: "center", xs: "left" }, color: COLORS.black }}
@@ -42,9 +42,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} sm={2} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 0 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 0 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <BenefitCard title={benefits[0].title} desc={benefits[0].desc} />
           </motion.div>
@@ -52,9 +53,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} sm={2} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 1 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 1 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             {" "}
             <BenefitCard title={benefits[1].title} desc={benefits[1].desc} />
@@ -64,9 +66,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} sm={2} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 2 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 2 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <BenefitCard title={benefits[2].title} desc={benefits[2].desc} />
           </motion.div>
@@ -75,9 +78,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} sm={2} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 3 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 3 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             {" "}
             <BenefitCard title={benefits[3].title} desc={benefits[3].desc} />
@@ -88,9 +92,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 0 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 0 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             {" "}
             <BenefitCard title={benefits[4].title} desc={benefits[4].desc} />
@@ -99,9 +104,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 1 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 1 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             {" "}
             <BenefitCard title={benefits[5].title} desc={benefits[5].desc} />
@@ -110,9 +116,10 @@ export const Benefits: React.FC<BenefitProps> = ({}) => {
         <Grid item xs={1} md={6} lg={3}>
           <motion.div
             className="group"
-            variants={slideIn({ delay: 0.6 + 2 / 10, direction: "down" })}
+            variants={slideIn({ delay: 0.9 + 2 / 10, direction: "down" })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <BenefitCard title={benefits[6].title} desc={benefits[6].desc} />
           </motion.div>

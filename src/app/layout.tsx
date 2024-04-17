@@ -8,6 +8,7 @@ import { SmoothScrolling } from "@/components/ui";
 import "@/assets/scss/style.scss";
 import { Copyright } from "@/components/footer/Copyright";
 import FlareCursor from "@/components/ui/FlareCursor";
+import SmoothScroll from "@/components/ui/smoothScroll";
 
 export default function RootLayout({
   children,
@@ -37,9 +38,11 @@ export default function RootLayout({
               backgroundColor: "transparent",
             }}
           />
+          {/* <SmoothScrolling> */}
           <Header />
           {children}
           <Footer />
+          {/* </SmoothScrolling> */}
         </ThemeProvider>
       </body>
     </html>

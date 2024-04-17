@@ -101,8 +101,8 @@ export const Tokenomics: React.FC<TokenomicsProps> = ({}) => {
                   ],
                 },
               ]}
-              width={500}
-              height={500}
+              width={460}
+              height={460}
             />
           </Box>
         </motion.div>
@@ -114,7 +114,7 @@ export const Tokenomics: React.FC<TokenomicsProps> = ({}) => {
               return (
                 <Grid item key={i} xs={1} sm={1} md={1} lg={1} mb={2}>
                   <Typography
-                    variant="h2"
+                    variant="h3"
                     sx={{
                       color: COLORS.black,
                       pb: 3,
@@ -125,7 +125,7 @@ export const Tokenomics: React.FC<TokenomicsProps> = ({}) => {
                     {item.title}
                   </Typography>
                   <Typography
-                    variant="h1"
+                    variant="h2"
                     sx={{ color: item.color, pt: 2, fontWeight: 600 }}
                   >
                     {item.value}%
@@ -148,13 +148,13 @@ export const Tokenomics: React.FC<TokenomicsProps> = ({}) => {
             mt={3}
           >
             <Typography
-              variant="h2"
+              variant="h3"
               sx={{ textAlign: "center", paddingTop: "4px" }}
             >
               Total Supply
             </Typography>
             <Typography
-              variant="h1"
+              variant="h2"
               sx={{ fontWeight: 600, textAlign: "center" }}
             >
               100.0000%

@@ -11,3 +11,11 @@ export const responsiveParagraph = style({
     },
   },
 });
+
+export const responsiveText = style({
+  "@media": {
+    "(max-width: 600px)": {
+      fontSize: "20px",
+    },
+  },
+});

@@ -36,16 +36,15 @@ export const Paragraph: React.FC<ParagraphProps> = ({ desc }) => {
         <Box sx={{ marginLeft: 2 }}>
           {desc.split("\n").map((item, i) => {
             return (
-              <>
+              <Box key={i}>
                 <Typography
                   variant="h4"
                   sx={{ color: COLORS.grey }}
-                  key={i}
                   className={responsiveParagraph}
                 >
                   {item}
                 </Typography>
-              </>
+              </Box>
             );
           })}
         </Box>

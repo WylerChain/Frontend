@@ -82,6 +82,10 @@ theme.typography.subtitle1 = {
     fontSize: "36px",
     lineHeight: "36px",
   },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "28px",
+    lineHeight: "36px",
+  },
 };
 
 theme.typography.body1 = {

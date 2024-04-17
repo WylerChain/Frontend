@@ -24,7 +24,7 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
       <Grid item xs={1} sm={2} md={4} lg={6}>
         <Box sx={{ borderBottom: "1px solid #E6E8EC" }}>
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{
               lineHeight: "64px",
               color: COLORS.black,

@@ -32,10 +32,10 @@ export default function Home() {
           </Box>
           <Technology />
           <Workout />
-          <Community />
+          <Tokenomics />
           <Team />
           <Partner />
-          <Tokenomics />
+          <Community />
         </Box>
       </Box>
     </>

@@ -16,7 +16,6 @@ export const Partner: React.FC<BenefitProps> = ({}) => {
     <Box
       id="partners"
       sx={{
-        backgroundColor: "#FCFCFD",
         padding: {
           xs: "0 10px",
           sm: "0 10px",
@@ -25,7 +24,7 @@ export const Partner: React.FC<BenefitProps> = ({}) => {
       }}
       mt={"134px"}
     >
-      <motion.div {...getSectionAnimation}>
+      <motion.div {...getSectionAnimation} viewport={{ once: true }}>
         <Typography
           variant="subtitle1"
           sx={{ textAlign: { md: "center", xs: "left" }, color: COLORS.black }}

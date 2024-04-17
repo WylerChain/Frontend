@@ -29,7 +29,7 @@ export const Involved: React.FC<InvolvedProps> = ({}) => {
         },
       }}
     >
-      <motion.section {...getSectionAnimation}>
+      <motion.section {...getSectionAnimation} viewport={{ once: true }}>
         <Box
           sx={{
             borderRadius: "20px",
@@ -47,6 +47,7 @@ export const Involved: React.FC<InvolvedProps> = ({}) => {
             })}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
           >
             <Typography
               variant="subtitle1"
@@ -72,6 +73,7 @@ export const Involved: React.FC<InvolvedProps> = ({}) => {
                     })}
                     initial="hidden"
                     whileInView="show"
+                    viewport={{ once: true }}
                   >
                     <InvolvedSection
                       title={item.title}
