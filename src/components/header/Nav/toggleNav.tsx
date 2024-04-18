@@ -81,7 +81,12 @@ export const ToggleNav: React.FC<NavProps> = ({ show, toggle }) => {
               >
                 <Link
                   href={item.url}
-                  sx={{ textAlign: "center" }}
+                  sx={{
+                    textAlign: "center",
+                    "&:hover": {
+                      color: COLORS.green,
+                    },
+                  }}
                   onClick={() => {
                     toggleOpen();
                   }}
