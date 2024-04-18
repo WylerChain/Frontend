@@ -34,7 +34,16 @@ export const Nav: React.FC<NavProps> = ({}) => {
         {menudata.map((item, i) => {
           return (
             <ListItem key={i}>
-              <Link href={item.url}>{item.title}</Link>
+              <Link
+                href={item.url}
+                sx={{
+                  "&:hover": {
+                    color: COLORS.green,
+                  },
+                }}
+              >
+                {item.title}
+              </Link>
             </ListItem>
           );
         })}
